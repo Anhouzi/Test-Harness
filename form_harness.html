@@ -7,9 +7,53 @@
         <link rel="stylesheet" href="CSS/main.css">
     </head>
     <body>
-        <form action="/sign-in-url" method="post">
-            <input type="text">
-            <input type="password">
+        <!-- action - where the data of the form goes. -->
+        <!-- method - what HTTP method. Get or Post.   -->
+        <form tag="login" action="" method="get">
+            <!-- MDN websit for a list of form inputs. <input> -->
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"> List of Inputs </a> </p>
+            
+            <!-- "required" keyword forces the browser to validate the form information. -->
+            <label> 
+                Username: 
+                <input type="text" placeholder="username" required>
+            </label>
+            
+            <label>
+                Password: 
+                <input  type="password" placeholder="password" pattern=".{5,10}" required title="5 to 10 Characters">
+            </label>
+            
+            <!-- The button at the end of a form will submit the form. -->
+            <button> Login </button>
+        </form>
+        
+        <form action="" method="get">
+            <!-- MDN websit for a list of form inputs. <input> -->
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"> List of Inputs </a> </p>
+            
+            <!-- "required" keyword forces the browser to validate the form information. -->
+            <label> 
+                Dogs: 
+                <input name="petChoice" type="radio" value="dogs" required>
+            </label>
+            
+            <label>
+                Cats: 
+                <input name="petChoice" type="radio" value="cats">
+            </label>
+            
+            
+            
+            <select name="color"> 
+                <option> Red </option>
+                <option> Blue </option>
+                <option> Green </option>
+            </select>
+            
+            <textarea name="TheWorld" rows="5" cols="20"> Paragraph </textarea>
+            
+            <!-- The button at the end of a form will submit the form. -->
             <button> Login </button>
         </form>
         <p> <a href="index.html">Back to Menu</a> </p>  
