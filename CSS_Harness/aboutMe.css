@@ -1,0 +1,94 @@
+h1 {
+    color: aqua;
+/*
+    border-color: red;
+    border-width: 3px;
+    border-style: solid;
+*/
+    
+/*  border: width style color*/
+    border: 3px solid red;
+}
+/*
+    borders must have at least the following properties:
+        border-width
+        border-color
+        border-style
+*/
+li {
+    color: red;
+}
+
+/* You can single out elements by giving them an 'id' property. 
+this allows you to specifically target them with css that differs from the general format. 
+
+Identify 'ids' with the # symbol.*/
+
+#first_game {
+    background: cyan;
+}
+
+/* Classes allow you to organize HTML elements by given types. Classes will all follow the same CSS formatting. 
+
+Identify classes by the . symbol. */
+
+.less_important {
+    color: blue;
+    text-decoration: line-through;
+}
+
+h3 {
+    color: orange;
+}
+
+body {
+    background: beige;
+    
+/*
+    background: url(https://images4.alphacoders.com/852/8526.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+}
+
+/* Other Selectors to know about:
+    Star: Affects ALL HTML elements. 
+* {
+
+} 
+
+
+    Descendant: Affects all 'y' elements that are a part of given 'x' elements. 
+h1 li {
+    Affects only 'li' elements that are inside of 'h1' elements. 
+    Can be chained even further than two elements.
+}
+
+
+    Adjacent: Affects all 'y' elements that come after given x element. 
+
+h1 + li {
+    Affects only all 'li' elements that come after 'h1' elements. 
+}
+    
+
+    Attribute: Affects all elements that contain the given element, does not include children. 
+
+a[href="index.html] {
+    Affects only 'a' elements that have href="index.html". 
+}
+
+input[type="check"] {
+    Affects all check box inputs. 
+}
+    
+    Nth of Type: Affects the Nth element of a specific type of element. 
+
+ul:nth-of-type(3) {
+    Affects only the third 'ul' element.  
+    NOTE: This goes for every third element. If there are multiple sets of three 'ul' elements all of the third elements will be effected. 
+}
+
+*/
+
+
